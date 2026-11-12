@@ -22,7 +22,7 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
 
-.icon {
+.modal-icon {
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -35,7 +35,7 @@ body {
   justify-content: center;
 }
 
-.close-button {
+.modal-close {
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -56,14 +56,37 @@ button {
   border-radius: 8px;
 }
 
-button.continue {
+button.btn-continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
 }
 
-button.cancel {
+button.btn-cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.modal-box {
+  margin: 10px;
+  display: flex;
+  gap: 16px;
+}
+
+.modal-icon {
+  flex-shrink: 0;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 20px;
 }
